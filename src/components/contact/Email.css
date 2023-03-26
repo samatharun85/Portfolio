@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* background-color: aqua; */
+  min-height: 100vh;
 }
 .title {
   color: var(--dark-orange);
@@ -41,6 +41,7 @@ form input {
   border-color: aliceblue;
   text-indent: 5px;
   color: black;
+  height: 35px;
 }
 .em {
   border-radius: 0;
@@ -49,6 +50,7 @@ textarea {
   width: 279px;
   border-radius: 0 0 10px 10px;
   text-indent: 5px;
+  height: 50px;
 
 }
 .sub {

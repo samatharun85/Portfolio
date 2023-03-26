@@ -6,7 +6,7 @@ import "./Profile.css";
 const Profile = () => {
   return (
     <div>
-    <div className="profile-container">
+    <div className="profile-container" id="home">
       <div className="profile-parent">
         <div className="profile-details">
           <div className="colz">

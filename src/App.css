@@ -18,3 +18,9 @@
     --toast-success: #0CBFAE;
     --loader-color: #0CBFAE;
 }
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color:#06162e;
+  }

@@ -1,0 +1,33 @@
+.about-container {
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-top: 20vh;
+  min-height: 100vh;
+}
+.name {
+  color: var(--dark-orange);
+  font-weight: bolder;
+}
+.about-title {
+  color: aliceblue;
+  font-size: xx-large;
+}
+.aboutme {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: aliceblue;
+}
+.about-tech {
+  margin-top: 20px;
+}
+.techs {
+  margin-top: 10px;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+.tech li {
+  list-style-type: square;
+}

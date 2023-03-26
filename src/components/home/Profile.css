@@ -1,13 +1,11 @@
-body{
-  background-color:#06162e;
-}
+
 .profile-container {
+  min-height: 100vh;
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
   height: 10%;
-  min-height: 340px;
   background-image: url("../../assets/Home/bg.jpg");
   margin-bottom: 30px;
 }
@@ -36,9 +34,7 @@ body{
   height: 100px;
   font-size: medium;
 }
-.icons:hover {
-  transform: scale(1.5);
-  transition: ease-in-out;
+.colz-icon i:hover {
   color: blue;
 }
 .primary-text {

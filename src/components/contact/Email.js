@@ -28,7 +28,7 @@ export const Email = () => {
   };
 
   return (
-    <div className="email-container">
+    <div className="email-container" id="contact">
       <div className="title">Get In Touch</div>
       <div className="sub">My inbox is always open for you!</div>
       <form ref={form} onSubmit={sendEmail}>
@@ -38,7 +38,6 @@ export const Email = () => {
         <input className="em" type="email" name="user_email" autoComplete="off" required/>
         <label>Message</label>
         <textarea name="message" required />
-        {/* <input type="submit" value="Send" /> */}
         <button type="submit">Send</button>
       </form>
     </div>
