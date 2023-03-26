@@ -1,9 +1,10 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./Email.css"
 
 export const Email = () => {
   const form = useRef();
+  const [result,setResult]=useState("")
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -18,11 +19,11 @@ export const Email = () => {
       .then(
         (result) => {
           console.log(result.text);
-          alert("Email sent! Have a nice day. ")
+          setResult("Sent Successfully!")
         },
         (error) => {
           console.log(error.text);
-          alert("Something went wrong! Try Again!")
+          setResult("Something went wrong! Try again!")
         }
       );
   };
@@ -40,6 +41,8 @@ export const Email = () => {
         <textarea name="message" required />
         <button type="submit">Send</button>
       </form>
+
+      <div className="result">{result}</div>
     </div>
   );
 };
